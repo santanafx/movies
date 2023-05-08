@@ -1,0 +1,9 @@
+.navLink {
+    text-decoration: none;
+    color: var(--amarelo);
+    transition: 0.5s;
+}
+
+.navLink:hover {
+    color: var(--branco);
+}
