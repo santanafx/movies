@@ -16,13 +16,13 @@ export const Home = () => {
     }
 
     React.useEffect(() => {
-        getTopRatedMovies(apiPopularMovie)
+        getTopRatedMovies(apiPopularMovie);
     }, [])
 
 
     return (
         <div>
-            {movies.map((movie) => <MovieComponent key={movie.id} title={movie.title} poster_path={movie.poster_path} />)}
+            {movies.map(movie => <MovieComponent key={movie.id} title={movie.title} poster_path={movie.poster_path} />)}
         </div>
     )
 }

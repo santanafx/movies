@@ -2,8 +2,9 @@
     text-decoration: none;
     color: var(--amarelo);
     transition: 0.5s;
+    font-size: 2rem;
 }
 
 .navLink:hover {
-    color: var(--branco);
+    color: var(--preto);
 }

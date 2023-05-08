@@ -1,10 +1,13 @@
 import React from 'react'
+import styles from './MovieComponent.module.css'
 
 export const MovieComponent = ({ title, poster_path }) => {
     return (
-        <div>
-            <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt="Imagens dos filmes" />
-            <h2>{title}</h2>
+        <div className={styles.container}>
+            <div className={styles.card}>
+                <img src={`https://image.tmdb.org/t/p/w500/${poster_path}`} alt="Imagens dos filmes" />
+                <h2>{title}</h2>
+            </div>
         </div>
     )
 }
