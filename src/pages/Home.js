@@ -1,9 +1,10 @@
 import React from 'react'
 import { MovieComponent } from '../components/MovieComponent';
+import styles from './Home.module.css'
 
 export const Home = () => {
 
-    const [movies, setMovies] = React.useState('');
+    const [movies, setMovies] = React.useState([]);
 
     const apiKey = 'a54568d8c62d218944381224a563c2d9';
     const apiPopularMovie = `https://api.themoviedb.org/3/discover/movie?include_adult=false&include_video=false&language=en-US&page=1&sort_by=popularity.desc&api_key=${apiKey}`;
@@ -12,16 +13,21 @@ export const Home = () => {
         const response = await fetch(url);
         const responseJson = await response.json();
         setMovies(responseJson.results);
-        console.log(responseJson.results);
+
     }
 
     React.useEffect(() => {
-        getTopRatedMovies(apiPopularMovie);
+        try {
+            getTopRatedMovies(apiPopularMovie);
+        } catch {
+            console.log('Api não funcionou')
+        }
+
     }, [])
 
 
     return (
-        <div>
+        <div className={styles.home}>
             {movies.map(movie => <MovieComponent key={movie.id} title={movie.title} poster_path={movie.poster_path} />)}
         </div>
     )
