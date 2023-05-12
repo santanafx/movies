@@ -25,10 +25,12 @@ export const Home = () => {
 
     }, [])
 
-
     return (
-        <div className={styles.home}>
-            {movies.map(movie => <MovieComponent key={movie.id} title={movie.title} poster_path={movie.poster_path} />)}
+        <div>
+            <h1>Melhores filmes:</h1>
+            <div className={styles.home}>
+                {movies.map(movie => <MovieComponent key={movie.id} title={movie.title} poster_path={movie.poster_path} vote_average={movie.vote_average} popularity={movie.popularity} overview={movie.overview} />)}
+            </div>
         </div>
     )
 }

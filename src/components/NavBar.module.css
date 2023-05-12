@@ -1,3 +1,14 @@
+nav {
+    background-color: var(--cinza);
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+
 .navLink {
     text-decoration: none;
     color: var(--amarelo);
@@ -6,5 +17,30 @@
 }
 
 .navLink:hover {
-    color: var(--preto);
+    color: var(--branco);
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    outline: none;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--cinza-claro);
+    opacity: 0.7;
+}
+
+.buttonSearch {
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: Transparent;
+}
+
+.search {
+    width: 20px;
+    height: 20px;
+    color: var(--amarelo);
 }

@@ -1,4 +1,12 @@
+h1 {
+    text-align: center;
+    color: var(--branco);
+    font-size: 3.5rem;
+    margin: 30px 0;
+}
+
 .home {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }

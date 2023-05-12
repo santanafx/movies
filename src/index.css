@@ -8,11 +8,12 @@
 
 :root {
   --preto: #000;
-  --amarelo: #ece400;
+  --amarelo: #d2cc10;
   --branco: #fff;
-  --cinza: #6d6d6d;
+  --cinza: #373737;
+  --cinza-claro: #c5c5c5;
 }
 
 body {
-  background-color: var(--branco);
+  background-color: var(--preto);
 }

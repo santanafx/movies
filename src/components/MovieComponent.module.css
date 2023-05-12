@@ -27,3 +27,40 @@ img {
     height: 50px;
     margin: 10px 0;
 }
+
+.title {
+    color: var(--branco);
+}
+
+.average {
+    color: var(--branco);
+}
+
+.star {
+    color: var(--amarelo);
+}
+
+.popularity {
+    color: var(--amarelo);
+}
+
+.popularity span {
+    color: var(--branco);
+}
+
+.buttonOverview {
+    background-color: var(--amarelo);
+    color: var(--cinza);
+    font-size: 1rem;
+    padding: 5px;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.4s;
+    border: 2px solid var(--amarelo);
+    font-weight: bold;
+}
+
+.buttonOverview:hover {
+    background-color: transparent;
+    color: var(--amarelo);
+}
