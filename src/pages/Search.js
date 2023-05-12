@@ -12,7 +12,7 @@ export const Search = () => {
     const apiKey = 'a54568d8c62d218944381224a563c2d9';
     const apiSearchMovie = `https://api.themoviedb.org/3/search/movie?api_key=${apiKey}&query=${query}`;
 
-    async function getTopRatedMovies(url) {
+    async function getMovies(url) {
         const response = await fetch(url);
         const responseJson = await response.json();
         setMovies(responseJson.results);
@@ -21,7 +21,7 @@ export const Search = () => {
 
     React.useEffect(() => {
         try {
-            getTopRatedMovies(apiSearchMovie);
+            getMovies(apiSearchMovie);
         } catch {
             console.log('Api não funcionou')
         }

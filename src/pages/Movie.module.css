@@ -1,0 +1,37 @@
+.container {
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 25%;
+    margin-bottom: 50px;
+}
+
+.card img {
+    width: 100%;
+
+}
+
+.cardDescription {
+    width: 50%;
+    background-color: var(--cinza);
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.cardDescription h3 {
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: var(--amarelo);
+}
+
+.span {
+    color: var(--amarelo);
+}

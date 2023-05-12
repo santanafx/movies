@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from './MovieComponent.module.css'
 import { AiFillStar } from "react-icons/ai";
+import { Link } from 'react-router-dom';
 
-export const MovieComponent = ({ title, poster_path, vote_average, popularity, overview }) => {
+export const MovieComponent = ({ title, poster_path, vote_average, popularity, id }) => {
     return (
         <div className={styles.container}>
             <div className={styles.card}>
@@ -14,7 +15,7 @@ export const MovieComponent = ({ title, poster_path, vote_average, popularity, o
                     <h2 className={styles.average}><AiFillStar className={styles.star} /> {vote_average}</h2>
                     <h2 className={styles.popularity}>Popularidade: <span>{popularity}</span></h2>
                 </div>
-                <button className={styles.buttonOverview} overview={overview} >Detalhes</button>
+                <Link className={styles.buttonOverview} to={`/movie/${id}`}>Detalhes</Link>
             </div>
         </div>
     )

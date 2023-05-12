@@ -58,6 +58,8 @@ img {
     transition: 0.4s;
     border: 2px solid var(--amarelo);
     font-weight: bold;
+    text-decoration: none;
+    text-align: center;
 }
 
 .buttonOverview:hover {

@@ -16,6 +16,7 @@ export const NavBar = () => {
             return
         }
         navigate(`/search?q=${search}`);
+        setSearch('');
     }
 
     return (
