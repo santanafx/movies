@@ -31,7 +31,7 @@ export const Movie = () => {
 
     }, [])
 
-    console.log(movie)
+
     return (
         <div className={styles.container}>
             <h1>{movie.title}</h1>
